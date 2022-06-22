@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Class Six Forever</title>
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<script language="javascript">
+	function siteTime() {
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000;
+		var minutes = seconds * 60;
+		var hours = minutes * 60;
+		var days = hours * 24;
+		var years = days * 365;
+		var today = new Date();
+		var todayYear = today.getFullYear();
+		var todayMonth = today.getMonth() + 1;
+		var todayDate = today.getDate();
+		var todayHour = today.getHours();
+		var todayMinute = today.getMinutes();
+		var todaySecond = today.getSeconds();
+
+		//天数
+		var t1 = Date.UTC(2021, 6, 24,);
+		var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+		var diff = t2 - t1;
+		var diffYears = Math.floor(diff / years);
+		var diffDays = Math.floor((diff / days) - diffYears * 365);
+		var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+		var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+		var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+		document.getElementById("sitetime").innerHTML = "我们已经毕业了" + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+	}
+	siteTime();
+</script>
+
+<body>
+
+	<header>
+		<div class="nav-bar">
+			<a href="" class="logo">We Were Together</a>
+			<div class="navigation">
+				<div class="nav-items">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="home">
+		<div class="media-icons">
+		</div>
+
+		<div class="swiper bg-slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/bg1.jpg" alt="">
+					<div class="text-content">
+						<h2 class="title">text <span></span></h2>
+						<p>text</p>
+						<button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+					</div>
+				</div>
+				<div class="swiper-slide dark-layer">
+					<img src="images/bg2.jpg" alt="">
+					<div class="text-content">
+						<h2 class="title">Memory <span>Things We Remember Forever</span></h2>
+						<p>文案显示处文案显示文案显示文案显示文案显示文案显示文案显示</p>
+					</div>
+				</div>
+				<div class="swiper-slide dark-layer">
+					<img src="images/bg3.jpg" alt="">
+					<div class="text-content">
+						<h2 class="title">text <span>text</span></h2>
+						<p>text</p>
+						<button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="images/bg4.jpg" alt="">
+					<div class="text-content">
+						<h2 class="title">Spring <span>Season</span></h2>
+						<p>Spring, also known as springtime, is one of the four temperate seasons, succeeding
+							winter and preceding summer. There are various technical definitions of spring, but
+							local usage of the term varies according to local climate, cultures and customs. When
+							it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and
+							vice versa.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-slider-thumbs">
+			<div class="swiper-wrapper thumbs-container" style="outline: none;">
+				<img src="images/bg1.jpg" class="swiper-slide" alt="" style="border:0em;">
+				<img src="images/bg2.jpg" class="swiper-slide" alt="" style="border: 0em;">
+				<img src="images/bg3.jpg" class="swiper-slide" alt="" style="border:0em;">
+				<img src="images/bg4.jpg" class="swiper-slide" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="about section">
+		<h2><span id="sitetime"></span></h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+			sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+			sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+			sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+			sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+			sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+			sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+			magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+			sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+			sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis
+			aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+			occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
