@@ -14,7 +14,7 @@ function biyetime() {
                         var todaySecond = today.getSeconds();
                         
 //天数
-                        var t1 = Date.UTC(2022, 6, 24 , 7); 
+                        var t1 = Date.UTC(2022, 6, 27 , 16,30); 
                         var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
                         var diff = t2 - t1;
                         var diffYears = Math.floor(diff / years);
