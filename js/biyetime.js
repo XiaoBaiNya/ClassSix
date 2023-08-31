@@ -19,9 +19,10 @@ function biyetime() {
                         var diff = t2 - t1;
                         var diffYears = Math.floor(diff / years);
                         var diffDays = Math.floor((diff / days) - diffYears * 365);
+												var realday = Math.floor((diff / years) * 365 ); //新加
                         var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
                         var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
                         var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
-                        document.getElementById("biyetime").innerHTML = "我们已经毕业了" +   diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                        document.getElementById("biyetime").innerHTML = "我们已经毕业了" +   realday + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
                     }  
                     biyetime();
